@@ -1,0 +1,43 @@
+* {
+    font-family: "Verdana";
+}
+
+input,
+select {
+    padding: 5px;
+}
+
+#logo {
+    width: 200px;
+    vertical-align: bottom;
+}
+
+.block {
+    display: block;
+    padding: 10px;
+
+}
+
+.label {
+    width: 100px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.datoscliente {
+    background-color: #55ccff;
+}
+
+.datospedido {
+    background-color: #40ccbb;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizzas Full Stack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="block center">
+        <img src="images/logo_pizza.svg" alt="Logo Pizza Full Stack" id="logo">
+        <h1 class="inline-block">Pizzas<br>Full Stack</h1>
+    </div>
+
+    <form method="post" name="form_pedido" id="form_pedido" action="http://localhost:5000/pizza">
+
+        <div class="block datoscliente">
+            <div class="left">
+                <h2>Datos del cliente</h2>
+
+                <div class="block">
+                    <label for="idnombre" class="inline-block label" id="lnombre">Nombre</label>
+                    <input type="text" id="idnombre" name="nombre" size="20" maxlength="20" class="inline-block">
+                </div>
+
+                <div class="block">
+                    <label for="idapellidos" class="inline-block label" id="lapellidos">Apellidos </label>
+                    <input type="text" id="idapellidos" name="apellidos" size="50" maxlength="50" class="inline-block">
+                </div>
+
+                <div class="block">
+                    <label for="idfnac" class="inline-block label">Fecha Nac. </label>
+                    <input type="text" id="idfnac" size="10" maxlength="10" class="inline-block">
+                </div>
+
+                <div class="block">
+                    <label for="idtelefono" class="inline-block label">Teléfono </label>
+                    <input type="text" id="idtelefono" size="9" maxlength="9" class="inline-block">
+                </div>
+
+                <div class="block">
+                    <label for="iddireccion" class="inline-block label">Dirección<br>Postal </label>
+                    <textarea id="iddireccion" rows="5" cols="50" class="inline-block"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="block datospedido">
+            <div class="left">
+                <h2>Datos del pedido</h2>
+
+                <div class="block">
+                    <label for="idtamano" class="inline-block label">Tamaño</label>
+                    <select id="idtamano" class="inline-block">
+                        <option value="1">Pequeña</option>
+                        <option value="2">Mediana</option>
+                        <option value="3">Grande</option>
+                    </select>
+                </div>
+
+                <div class="block">
+                    <label for="idingredientes" class="inline-block label">Ingredientes </label>
+                    <input id="idingredientes" type="checkbox" name="ingredientes" value="JY"> Jamón York
+                    <input type="checkbox" name="ingredientes" value="CH"> Champiñones
+                    <input type="checkbox" name="ingredientes" value="PE"> Pepperoni
+                    <input type="checkbox" name="ingredientes" value="AC"> Aceitunas
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin:20px">
+            <input type="submit" value="Solicitar pedido">
+        </div>
+
+    </form>
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
