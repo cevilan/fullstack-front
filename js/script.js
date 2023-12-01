@@ -15,3 +15,16 @@ $('#form_pedido').submit(function (e) {
         $("#lapellidos").css("color", "black");
     }
 });
+
+$("#idtamano").on('change', function() {
+    $.ajax({type: "POST",
+            url: "http://localhost:5000/checksize",
+            data: {tamano: this.value},
+            success: function (result){
+                if (result=='No disponible'){
+                    $("#resultado_tamano").css('color',"red");
+                }
+                $("#resultado_tamano").text(result);
+            }
+    });
+});
