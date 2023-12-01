@@ -24,6 +24,9 @@ $("#idtamano").on('change', function() {
                 if (result=='No disponible'){
                     $("#resultado_tamano").css('color',"red");
                 }
+                else{
+                    $("#resultado_tamano").css('color',"blue");
+                }
                 $("#resultado_tamano").text(result);
             }
     });
